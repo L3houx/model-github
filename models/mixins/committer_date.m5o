@@ -1,0 +1,17 @@
+columns {
+  committer_date {
+    label = Creation Date
+    type = time
+    sql = "{{table}}.committer_date"
+  }
+}
+
+timeframes {
+  committer_date {
+    include "_timeframe.proto.m5o"
+
+    label = Commiter Date
+    description = Commiter Date Timeframe
+    sql = "{{table}}.committer_date"
+  }
+}
