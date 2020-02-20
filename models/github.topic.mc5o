@@ -6,7 +6,7 @@
   designs {
     github_commits_stats {
       label = GitHub Project Commmits Stats
-      from = gitlab_commits
+      from = github_commits
       description = GitHub Project Commmits Stats
     }
   }
