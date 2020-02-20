@@ -1,0 +1,17 @@
+columns {
+  updated_at {
+    label = Update Date
+    type = time
+    sql = "{{table}}.updated_at"
+  }
+}
+
+timeframes {
+  updated_at {
+    include "_timeframe.proto.m5o"
+
+    label = Updated At
+    description = Updated At Timeframe
+    sql = "{{table}}.updated_at"
+  }
+}

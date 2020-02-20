@@ -1,0 +1,10 @@
+type = time
+periods = [
+  { name = dow, label = Day (week), part = DOW },
+  { name = dom, label = Day (month), part = DAY },
+  { name = doy, label = Day (year), part = DOY },
+  { name = week, label = Week, part = WEEK },
+  { name = month, label = Month, part = MONTH },
+  { name = year, label = Year, part = YEAR },
+  { name = quarter, label = Quarter, part = QUARTER }
+]

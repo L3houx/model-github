@@ -1,0 +1,15 @@
+columns {
+  due_date {
+    type = time
+    label = Due Date
+    sql = "{{table}}.due_date"
+  }
+}
+
+timeframes {
+  due_date {
+    include "_timeframe.proto.m5o"
+    label = Due Date
+    sql = "{{table}}.due_date"
+  }
+}

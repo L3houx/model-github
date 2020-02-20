@@ -1,0 +1,13 @@
+{
+  version = 1
+  name = github
+  connection = postgres_db
+  label = GitHub
+  designs {
+    github_commits_stats {
+      label = GitHub Project Commmits Stats
+      from = gitlab_commits
+      description = GitHub Project Commmits Stats
+    }
+  }
+}

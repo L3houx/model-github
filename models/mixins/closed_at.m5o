@@ -1,0 +1,15 @@
+columns {
+  closed_at {
+    label = Closure Date
+    type = time
+    sql = "{{table}}.closed_at"
+  }
+}
+
+timeframes {
+  closed_at {
+    include "_timeframe.proto.m5o"
+    label = Closure Date
+    sql = "{{table}}.closed_at"
+  }
+}

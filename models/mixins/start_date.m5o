@@ -1,0 +1,15 @@
+columns {
+  start_date {
+    label = Start Date
+    type = time
+    sql = "{{table}}.start_date"
+  }
+}
+
+timeframes {
+  start_date {
+    include "_timeframe.proto.m5o"
+    label = Start Date
+    sql = "{{table}}.start_date"
+  }
+}

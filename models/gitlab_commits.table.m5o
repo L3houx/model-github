@@ -1,0 +1,47 @@
+{
+  include "mixins/created_at.m5o"
+
+  version = 1
+  sql_table_name = github_commits
+  name = github_commits
+  columns {
+    commit_id {
+      primary_key = true
+      description = Commit sha (ID)
+      type = string
+      sql = "{{table}}.sha"
+    }
+    commit_message{
+        label = Message
+        description = Commit Message
+        type = string
+        sql = "{{table}}.message"
+    }
+    author_email {
+      label = Author Name
+      description = Author Name
+      type = string
+      sql = "{{table}}.author_email"
+    }
+    committer_name {
+      label = Commiter Name
+      description = Commiter Name
+      type = string
+      sql = "{{table}}.committer_name"
+    }
+    html_url{
+        label = HTML URL
+        description = HTML URL of the commit
+        type = string
+        sql = "{{table}}.html_url"
+    }
+  }
+  aggregates {
+    total_commits {
+      label = Total Commits
+      description = Total Commits
+      type = count
+      sql = "{{table}}.sha"
+    }
+  }
+}

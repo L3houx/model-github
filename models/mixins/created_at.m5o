@@ -1,0 +1,17 @@
+columns {
+  created_at {
+    label = Creation Date
+    type = time
+    sql = "{{table}}.created_at"
+  }
+}
+
+timeframes {
+  created_at {
+    include "_timeframe.proto.m5o"
+
+    label = Created At
+    description = Created At Timeframe
+    sql = "{{table}}.created_at"
+  }
+}
