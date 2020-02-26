@@ -44,4 +44,5 @@
       type = string
       sql = "{{TABLE}}.assignee_login"
     }
+  }
 }
