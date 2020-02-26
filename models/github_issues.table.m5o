@@ -1,0 +1,47 @@
+{
+  include "mixins/created_at.m5o"
+  include "mixins/updated_at.m5o"
+  include "mixins/closed_at.m5o"
+  include "mixins/due_date.m5o"
+
+  version = 1
+  sql_table_name = github_issues_transform
+  name = github_issues_transform
+  columns {
+    id {
+      primary_key = true
+      hidden = true
+      type = string
+      sql = "{{table}}.id"
+    }
+    state {
+      label = State
+      description = Issue State
+      type = string
+      sql = "{{table}}.state"
+    }
+    title {
+      label = Title
+      description = Issue Title
+      type = string
+      sql = "{{table}}.title"
+    }
+    created_at {
+      label = Created At
+      description = Date the Issue was created
+      type = string
+      sql = "{{table}}.created_at"
+    }
+    closed_at {
+      label = Close At
+      description = Date the Issue was closed
+      type = string
+      sql = "{{table}}.closed_at"
+    }
+    assignee_login {
+      label = Assignee Login
+      hidden = yes
+      type = string
+      sql = "{{TABLE}}.assignee_login"
+    }
+}
