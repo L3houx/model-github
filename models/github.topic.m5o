@@ -6,7 +6,12 @@
   designs {
     github_commits_stats {
       label = GitHub Project Commmits Stats
-      from = github_commits
+      from = github_commits_transform
+      description = GitHub Project Commmits Stats
+    }
+    github_issues_stats {
+      label = GitHub Project Issues Stats
+      from = github_issues_transform
       description = GitHub Project Commmits Stats
     }
   }
