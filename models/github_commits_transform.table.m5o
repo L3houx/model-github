@@ -1,5 +1,5 @@
 {
-  include "mixins/commiter_date.m5o"
+  include "mixins/committer_date.m5o"
 
   version = 1
   sql_table_name = github_commits_transform
