@@ -1,0 +1,37 @@
+{
+  version = 1
+  sql_table_name = github_assignees_transform
+  name = github_assignees_transform
+  columns {
+    id {
+      primary_key = true
+      description = Assignee ID
+      type = integer
+      sql = "{{table}}.id"
+    }
+    login{
+        label = Username
+        description = Username
+        type = string
+        sql = "{{table}}.login"
+    }
+    repository {
+      label = Repository
+      description = Repository
+      type = string
+      sql = "{{table}}._sdc_repository"
+    }
+    url {
+      label = URL
+      description = URL
+      type = string
+      sql = "{{table}}.url"
+    }
+    type{
+        label = Type
+        description = Type
+        type = string
+        sql = "{{table}}.type"
+    }
+  }
+}

@@ -14,5 +14,15 @@
       from = github_issues_transform
       description = GitHub Project Commmits Stats
     }
+    github_collaborators_stats {
+      label = GitHub Repository Collaborators
+      from = github_collaborators_transform
+      description = GitHub Project Collaborators Stats
+    }
+    github_assignees_stats {
+      label = GitHub Repository Assignees
+      from = github_assignees_transform
+      description = GitHub Project Assignees Stats
+    }
   }
 }
