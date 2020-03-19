@@ -38,11 +38,11 @@
       type = string
       sql = "{{table}}.closed_at"
     }
-    assignee_login {
-      label = Assignee Login
+    user_login {
+      label = User Login
       hidden = yes
       type = string
-      sql = "{{TABLE}}.assignee_login"
+      sql = "{{table}}.user_login"
     }
   }
 }
